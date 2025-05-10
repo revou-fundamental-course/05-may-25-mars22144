@@ -1,0 +1,74 @@
+/* For debugging purposes only */
+/* * {
+    border: 1px solid;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://picsum.photos/100);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+
+nav {
+    display: flex;
+}
+
+nav a {
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    background-color: azure;
+}
+
+section {
+    text-align: center;
+}
+
+.banner-form {
+    display: flex;
+    gap: 32px;
+}
+
+.banner-img {
+    border: 1px solid;
+    height: 250px;
+    width: 100%;
+}
+
+.banner-form form {
+    border: 1px solid;
+    height: 250px;
+    width: 100%;
+}
+
+.sub-content {
+    height: 500px;
+    align-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* responsive smartphone */
+@media only screen and (max-width: 480px) {
+    .banner-form {
+        flex-direction: column;
+    }
+}
