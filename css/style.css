@@ -81,9 +81,9 @@ section h4 {
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
-.form-main:hover{
-    background-color: rgba(77, 81, 83, 0.15);
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+.form-main:hover {
+  background-color: rgba(77, 81, 83, 0.15);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 input {
@@ -131,34 +131,64 @@ select {
   pointer-events: none;
 }
 
-.button-form{
-    background-color: #2e3843;
-    color: white;
-    border: 1px solid #2e3843;
-    width: 25%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 6px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    font-size: 20px;
-    transition: background-color 0.3s ease;
+.button-form {
+  background-color: #2e3843;
+  color: white;
+  border: 1px solid #2e3843;
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.button-form:hover{
-    background-color: #2e384375;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    border: 1px solid #2e384375;
-    color: black;
+.button-form:hover {
+  background-color: #2e384375;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: 1px solid #2e384375;
+  color: black;
 }
 
+/* package-content */
 .sub-content {
   height: 500px;
   align-content: center;
 }
+
+.image-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.image-content img {
+  max-width: 20%;
+  height: auto;
+  flex: 1 1 30%;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.kursi:hover {
+  filter: blur(2px);
+}
+
+.laci:hover {
+  filter: blur(2px);
+}
+
+.meja:hover {
+  filter: blur(2px);
+}
+
 
 footer {
   text-align: center;
