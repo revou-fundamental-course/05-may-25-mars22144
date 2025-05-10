@@ -34,6 +34,11 @@ nav a {
   text-decoration: none;
   padding: 8px;
   border: 1px solid black;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #2e384375;
 }
 
 .nav-home {
@@ -83,7 +88,7 @@ section h4 {
 
 .form-main:hover {
   background-color: rgba(77, 81, 83, 0.15);
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 input {
