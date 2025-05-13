@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-
-    <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   </head>
 
   <body>
@@ -37,24 +36,27 @@
         <div class="banner-form">
           <div class="banner-img"></div>
 
-          <form action="" class="form-main">
+          <form id="registrationForm" class="form-main">
             <h4 class="header-form">Contact Us</h4>
             <p>Admin akan menghubungi anda dalam jangka waktu 2x24 jam setelah form terkirim</p>
             <br />
             <label for="nama">Nama</label>
-            <input type="text" name="nama" required placeholder="Masukkan Nama Anda" />
+            <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda" />
+            <small class="error-message"></small><br />
 
             <label for="email">Email Address</label>
-            <input type="email" name="email" required placeholder="Masukkan Email Anda" />
+            <input type="text" name="email" id="email" required placeholder="Masukkan Email Anda" />
+            <small class="error-message"></small><br />
 
             <label for="interest">What are you interested in?</label>
             <div class="select-wrapper">
               <select id="interest">
-                <option disabled selected>Select option</option>
-                <option id="web-development">Web Development</option>
-                <option id="mobile-apps">Mobile Apps</option>
-                <option id="ui-ux-design">UI/UX Design</option>
+                <option value="">Select option</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-apps">Mobile Apps</option>
+                <option value="ui-ux-design">UI/UX Design</option>
               </select>
+              <small class="error-message"></small>
             </div>
 
             <button class="button-form">Send</button>
@@ -70,26 +72,62 @@
         </header>
 
         <!-- Our Package Content -->
-        <div class="sub-content">
-          <div class="image-content">
-            <img src="img/kursi.jpg" alt="Kursi" class="kursi">
-            <img src="img/laci.jpg" alt="Laci" class="laci">
-            <img src="img/meja.jpg" alt="Meja" class="meja">
+        <div class="container">
+          <div class="product-row">
+            <div class="product-item">
+              <div class="icon"><i class="fa-solid fa-couch"></i></div>
+              <h3>Sofa Minimalis</h3>
+              <p>Desain modern, nyaman untuk bersantai bersama keluarga.</p>
+            </div>
+
+            <div class="product-item">
+              <div class="icon"><i class="fa-solid fa-chair"></i></div>
+              <h3>Kursi Makan Set</h3>
+              <p>Terdiri dari 4 kursi dan 1 meja, cocok untuk ruang makan Anda.</p>
+            </div>
+
+            <div class="product-item">
+              <div class="icon"><i class="fa-solid fa-bed"></i></div>
+              <h3>Tempat Tidur Kayu</h3>
+              <p>Rangka kayu solid, kuat dan tahan lama untuk tidur nyenyak.</p>
+            </div>
+          </div>
+          <hr class="separator" />
+
+          <div class="product-row">
+            <div class="product-item">
+              <div class="icon"><i class="fa-solid fa-shirt"></i></div>
+              <h3>Lemari Pakaian</h3>
+              <p>Ruang penyimpanan luas untuk semua kebutuhan pakaian Anda.</p>
+            </div>
+
+            <div class="product-item">
+              <div class="icon"><i class="fa-solid fa-table"></i></div>
+              <h3>Meja Kerja</h3>
+              <p>Desain ergonomis, ideal untuk bekerja atau belajar di rumah.</p>
+            </div>
+
+            <div class="product-item">
+              <div class="icon"><i class="fa-solid fa-book"></i></div>
+              <h3>Rak Buku Dinding</h3>
+              <p>Solusi penyimpanan buku yang hemat tempat dan dekoratif.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <hr />
+      <hr class="grs-bwh" />
 
       <!-- Call Us Content -->
       <section id="call-us">
         <header>
           <h1>Call Us</h1>
+          <button>button</button>
         </header>
 
         <!-- Call Us Content -->
         <div class="sub-content">
-          <p>Lorem Ipsum Dolor Sit Amet</p>
+          <p>Hubungi kami jika mempunyai kendala</p>
         </div>
       </section>
     </main>
@@ -100,5 +138,6 @@
     <footer>
       <span class="copyright"> &copy; 2025 Fauziadnan. All rights reserved. </span>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
