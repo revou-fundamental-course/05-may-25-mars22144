@@ -233,6 +233,48 @@ select {
   margin-top: 50px;
 }
 
+/* call us */
+.btn-call-us {
+  background-color: #2e3843;
+  color: white;
+  border: 1px solid #2e3843;
+  width: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 6px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 20px;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn-call-us:hover {
+  background-color: #2e384375;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border: 1px solid #2e384375;
+  color: black;
+}
+
+.link-call-us {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-content h5{
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.sub-content p{
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
 /* footer */
 footer {
   text-align: center;

@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(errorMessages[2]);
         }
 
-        //munculkan alert
+        // munculkan alert
         if (!isValid) {
             event.preventDefault(); 
         } else {
