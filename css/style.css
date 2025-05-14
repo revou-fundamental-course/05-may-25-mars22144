@@ -487,3 +487,45 @@ footer {
     font-size: 14px;
   }
 }
+
+@media (min-width: 769px) and (max-width:1024px){
+  /* banner form */
+  .form-main{
+    width: 100%;
+    height: auto;
+  }
+
+  .form-main p{
+    margin-bottom: 0;
+  }
+
+  input{
+    padding: 11px;
+  }
+
+  .header-form{
+    margin: 10px 0 0 0;
+  }
+
+  .button-form{
+    margin-top: 5px;
+  }
+
+  /* benefit */
+  .benefit-item {
+    width: 27%;
+  }
+
+  /* call us */
+  .btn-call-us {
+    width: 20%;
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .sub-content p{
+    text-align: center;
+    padding: 65px;
+    margin-top: 0;
+  }
+}
