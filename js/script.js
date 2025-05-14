@@ -90,6 +90,7 @@ function prevSlide() {
   showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 3000); 
+setInterval(nextSlide, 5000); 
 
 showSlide(currentIndex);
+startInterval();
