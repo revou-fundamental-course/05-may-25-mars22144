@@ -1,9 +1,3 @@
-// link buttonnya
-const btnLink = document.querySelector(".btn-call-us");
-btnLink.addEventListener("click", function () {
-  window.location.href = "https://www.youtube.com/";
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("registrationForm");
   const usernameInput = document.getElementById("nama");
@@ -17,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validasi Username
     if (!validateUsername(usernameInput.value)) {
       displayError(errorMessages[0], "Username harus terdiri dari 3-20 karakter.");
+      console.log(usernameInput.value);
       isValid = false;
     } else {
       clearError(errorMessages[0]);
@@ -25,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validasi Email
     if (!validateEmail(emailInput.value)) {
       displayError(errorMessages[1], "Format email tidak valid.");
+      console.log(emailInput.value);
       isValid = false;
     } else {
       clearError(errorMessages[1]);
@@ -33,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // validasi option
     if (interestInput.value === "") {
       displayError(errorMessages[2], "Silakan pilih salah satu opsi.");
+      console.log(interestInput.value);
       isValid = false;
     } else {
       clearError(errorMessages[2]);
@@ -91,6 +88,10 @@ function prevSlide() {
 }
 
 setInterval(nextSlide, 5000); 
-
 showSlide(currentIndex);
-startInterval();
+
+// link buttonnya call us
+const btnLink = document.querySelector(".btn-call-us");
+btnLink.addEventListener("click", function () {
+  window.location.href = "https://www.youtube.com/";
+});
